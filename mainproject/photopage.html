@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photopage</title>
+    <link rel="stylesheet" href="photopagestyle.css">
+</head>
+<body>
+    <section><div class="banner">
+        <div class="navbar">
+            <h3 class="logo">GK STUDIO</h3>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="photopage.html">Photo</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="mainpage.html">About us</a></li>
+                <li><a href="contact.html">contact</a></li>
+              </ul>
+              </div>
+              </div>
+            </section>
+    <section id="photopage2">
+    <div class="full-img" id="fullImgBox">
+        <img src="image1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="image1.jpg"  onclick="openFullImg(this.src)">
+        <img src="image2.webp"  onclick="openFullImg(this.src)">
+        <img src="image3.jpg"  onclick="openFullImg(this.src)">
+        <img src="image4.jpg"  onclick="openFullImg(this.src)">
+        <img src="image5.jpg" onclick="openFullImg(this.src)">
+        <img src="image6.jpg" onclick="openFullImg(this.src)">
+        <img src="image7.jpeg" onclick="openFullImg(this.src)">
+        <img src="image8.jpg" onclick="openFullImg(this.src)">
+    </div>
+    
+    <script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+function closeFullImg(){
+    fullImgBox.style.display = "none";
+}
+    </script>
+    </section>
+</body>
+</html>
